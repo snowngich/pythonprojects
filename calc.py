@@ -1,5 +1,7 @@
-cat1= int(input("enter cat 1 results"))
-cat2= int(input("enter cat 2 results"))
-main= int(input("enter main exam results"))
-total= main + (cat1+cat2)/2
-print(total)
+import tkinter as tk
+def compute_total():
+    cat1 = int(cat1_entry.get())
+    cat2 = int(cat2_entry.get())
+    main_exam = int(main_exam_entry.get())
+    total = main_exam + (cat1 + cat2)/2
+    
