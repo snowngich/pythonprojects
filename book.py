@@ -5,11 +5,10 @@ class Book:
         self.year_published=year_published
         self.price=price
     def get_info(self):
-        return f"{self.title} by {self.author} published in {self.year_published}"
+        return f"{self.title} by {self.author} published on {self.year_published}"
     def apply_discount(self,discount):
-        self.price-=self.price*(discount/100)
-
-book1=Book("mrman","steve richards",2002,5000)
+        self.price-= self.price*(discount/100)
+book1=Book("Hustlers University","Andrew Tate",2024,1499)
 print(book1.get_info())
-book1.apply_discount(10)
+book1.apply_discount(15)
 print(book1.price)
